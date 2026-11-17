@@ -31,6 +31,11 @@ const codeModeLabel = $("codeModeLabel");
 
 const TIMEOUT_MS = 1500;
 
+// Updated payloads:
+// Normal: valid input
+// Medium: longer invalid input to demonstrate backtracking
+// Heavy: longer invalid input that may reach the safety limit
+
 const PAYLOADS = {
   normal: {
     input: "Bank2026",
@@ -38,7 +43,7 @@ const PAYLOADS = {
   },
 
   medium: {
-    input: "Bank2026Bank!",
+    input: "Bank2026Bank2026!",
     label: "Medium Attack"
   },
 
@@ -328,8 +333,11 @@ function runTest(key) {
     stopWorker();
     setRunning(false);
 
+    // Display more decimal places for small execution times
+    const formattedTime = data.elapsed.toFixed(6);
+
     executionTime.textContent =
-      `${data.elapsed.toFixed(3)} ms`;
+      `${formattedTime} ms`;
 
     processingStatus.textContent = "Completed";
 
@@ -348,12 +356,12 @@ function runTest(key) {
     } else if (mode === "fixed" && key !== "normal") {
       resultBar.className = "result-bar success";
       resultBar.textContent =
-        `Attack input rejected efficiently in ${data.elapsed.toFixed(3)} ms.`;
+        `Attack input rejected efficiently in ${formattedTime} ms.`;
 
     } else {
       resultBar.className = "result-bar danger";
       resultBar.textContent =
-        `Invalid username rejected after ${data.elapsed.toFixed(3)} ms. Compare with Fixed mode.`;
+        `Invalid username rejected after ${formattedTime} ms. Compare with Fixed mode.`;
     }
   };
 

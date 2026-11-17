@@ -1,6 +1,7 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styleRedos.css">
 
-  <!-- JavaScript: execute after HTML is parsed -->
+  <!-- JavaScript -->
   <script src="scriptRedos.js" defer></script>
 </head>
 
@@ -68,12 +69,13 @@
         <span class="hint">Interactive demonstration</span>
       </div>
 
-      <!-- VULNERABLE / FIXED SWITCH -->
+      <!-- VALIDATOR MODE SWITCH -->
       <div
         class="mode-switch"
         role="group"
         aria-label="Validator mode"
       >
+
         <button
           id="vulnerableBtn"
           class="active-vulnerable"
@@ -90,6 +92,7 @@
         >
           Fixed
         </button>
+
       </div>
 
       <!-- CODE DISPLAY -->
@@ -97,6 +100,7 @@
         class="code-box panel"
         aria-labelledby="code-title"
       >
+
         <div class="section-heading">
           <h3 id="code-title">The line</h3>
 
@@ -117,6 +121,7 @@
           id="codeExplanation"
           class="explanation"
         ></p>
+
       </section>
 
       <!-- EXECUTION METRICS -->
@@ -124,6 +129,7 @@
         class="metrics"
         aria-label="Execution metrics"
       >
+
         <div class="metric panel">
           <p>Execution Time</p>
           <strong id="executionTime">— ms</strong>
@@ -133,6 +139,7 @@
           <p>Processing Status</p>
           <strong id="processingStatus">Ready</strong>
         </div>
+
       </section>
 
       <!-- PAYLOAD TESTING -->
@@ -140,24 +147,35 @@
         class="try-section"
         aria-labelledby="try-title"
       >
+
         <div class="section-heading">
           <h2 id="try-title">Try it</h2>
           <span class="hint">Select a payload</span>
         </div>
 
+        <!-- PAYLOAD BUTTONS -->
         <div class="payloads">
 
-          <button id="normalBtn" type="button">
+          <button
+            id="normalBtn"
+            type="button"
+          >
             <span>Normal Input</span>
             <small>Valid username</small>
           </button>
 
-          <button id="mediumBtn" type="button">
+          <button
+            id="mediumBtn"
+            type="button"
+          >
             <span>Medium Attack</span>
             <small>Invalid suffix</small>
           </button>
 
-          <button id="heavyBtn" type="button">
+          <button
+            id="heavyBtn"
+            type="button"
+          >
             <span>Heavy Attack</span>
             <small>Stress test</small>
           </button>
@@ -166,17 +184,20 @@
 
         <!-- INPUT PREVIEW -->
         <div class="input-preview panel">
-          <span class="field-label">Test input</span>
 
-          <code id="inputPreview">
-            Choose a payload above
-          </code>
+          <span class="field-label">
+            Test input
+          </span>
+
+          <code id="inputPreview">Choose a payload above</code>
+
         </div>
 
         <!-- EXECUTION TRACE -->
         <div class="trace panel">
 
           <div class="section-heading">
+
             <h3>Regex Execution Trace</h3>
 
             <button
@@ -186,6 +207,7 @@
             >
               Reset
             </button>
+
           </div>
 
           <div
@@ -204,7 +226,7 @@
 
         </div>
 
-        <!-- RESULT -->
+        <!-- TEST RESULT -->
         <div
           id="resultBar"
           class="result-bar"
@@ -222,6 +244,7 @@
         </p>
 
       </section>
+
     </section>
 
     <!-- SECURITY EXPLANATION -->
@@ -230,7 +253,10 @@
       aria-labelledby="impact-title"
     >
 
-      <h2 id="impact-title">Why it matters</h2>
+      <!-- IMPACT -->
+      <h2 id="impact-title">
+        Why it matters
+      </h2>
 
       <p>
         A slow username check can tie up server resources.
@@ -256,6 +282,7 @@
       <h2>Sources</h2>
 
       <p class="source-links">
+
         <a
           href="https://cwe.mitre.org/data/definitions/1333.html"
           target="_blank"
@@ -271,6 +298,7 @@
         >
           Cloudflare 2019 incident
         </a>
+
       </p>
 
     </section>
