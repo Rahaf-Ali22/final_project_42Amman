@@ -855,3 +855,34 @@ footer {
     text-align: center;
     font-size: 0.85rem;
 }
+/* Backtracking Illustration */
+.backtracking-demo {
+  margin: 28px 0;
+  padding: 24px;
+  text-align: center;
+}
+
+.backtracking-demo h2 {
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.backtracking-demo img {
+  display: block;
+  width: 100%;
+  max-width: 1050px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+.backtracking-demo p {
+  margin: 12px auto;
+  max-width: 760px;
+  line-height: 1.7;
+}
+
+.backtracking-demo .backtracking-caption {
+  font-size: 13px;
+  opacity: 0.75;
+}
