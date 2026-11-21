@@ -28,12 +28,12 @@ const PAYLOADS = {
   },
 
   medium: {
-    input: "Bank2026Bank2026!",
+    input: "Bank2026Bank2026?",
     label: "Medium Attack"
   },
 
   heavy: {
-    input: "Bank2026Bank2026Bank2026!",
+    input: "Bank2026Bank2026Bank2026?",
     label: "Heavy Attack"
   }
 };
@@ -439,7 +439,7 @@ function runTest(key) {
   addStep("Validation started", "wait");
 
   if (key !== "normal") {
-    addStep("Invalid ! suffix detected in input", "wait");
+    addStep("Invalid ? suffix detected in input", "wait");
   }
 
   resultBar.className = "result-bar";
