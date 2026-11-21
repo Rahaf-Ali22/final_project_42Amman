@@ -1105,12 +1105,6 @@ a {
         width: 18px;
     }
 
-    .nav-right {
-        width: 100%;
-        justify-content: center;
-        gap: 4px;
-    }
-
     .nav-link {
         padding: 7px 8px;
         font-size: 11px;
@@ -1294,10 +1288,6 @@ a {
 
     .home-link svg {
         width: 16px;
-    }
-
-    .nav-right {
-        gap: 3px;
     }
 
     .nav-link {
