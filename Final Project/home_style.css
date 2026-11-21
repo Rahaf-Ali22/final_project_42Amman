@@ -378,3 +378,246 @@ footer {
     text-align: center;
     font-size: 0.85rem;
 }
+
+@media screen and (max-width: 992px) {
+
+    .labs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .works {
+        gap: 30px;
+        padding: 40px 25px;
+    }
+
+    .navbar {
+        width: calc(100% - 40px);
+    }
+
+    .nav-link {
+        padding: 9px 12px;
+        font-size: 0.9rem;
+    }
+
+    .lab-title {
+        padding-left: 20px;
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    html {
+        scroll-padding-top: 80px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .site-header {
+        padding: 10px 0 5px;
+    }
+
+    .navbar {
+        width: calc(100% - 24px);
+        min-height: auto;
+        padding: 10px 12px;
+        border-radius: 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .home-link {
+        gap: 6px;
+        font-size: 0.9rem;
+    }
+
+    .home-link svg {
+        width: 20px;
+    }
+
+    .nav-right {
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 7px 9px;
+        font-size: 0.75rem;
+    }
+
+    .nav-divider {
+        height: 20px;
+        margin: 0 2px;
+    }
+
+    .theme-toggle {
+        min-width: 38px;
+        min-height: 34px;
+        padding: 5px 8px;
+        gap: 4px;
+    }
+
+    .theme-toggle svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .theme-label {
+        font-size: 0.7rem;
+    }
+
+    .web-title {
+        padding: 35px 15px 25px;
+    }
+
+    .web-title h1 {
+        font-size: clamp(25px, 7vw, 36px);
+        letter-spacing: 1.5px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin: 15px auto 25px;
+        padding: 0 12px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .about {
+        padding: 35px 18px 30px;
+    }
+
+    .about-content h2 {
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
+
+    .about-content > p:not(.subtitle) {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-top: 8px;
+    }
+
+    .works {
+        flex-direction: column;
+        gap: 25px;
+        padding: 35px 20px;
+        font-size: 16px;
+    }
+
+    .works h2 {
+        font-size: 1.9rem;
+        margin-bottom: 14px;
+    }
+
+    .works-list {
+        padding-left: 20px;
+    }
+
+    .lab-title {
+        padding-left: 20px;
+        font-size: 1.9rem;
+    }
+
+    .labs-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    .labs {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    .labs h2 {
+        font-size: 1.5rem;
+    }
+
+    .labs h3 {
+        font-size: 1.1rem;
+    }
+
+    .labs h4 {
+        font-size: 1rem;
+    }
+
+    .labs > p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .labs > a {
+        font-size: 1rem;
+    }
+
+    .diff-med {
+        margin-left: 10px;
+    }
+
+    .diff-hard {
+        margin-left: 10px;
+    }
+
+    .resources-list {
+        padding-left: 18px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        padding: 18px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .home-link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 6px 7px;
+        font-size: 0.7rem;
+    }
+
+    .web-title h1 {
+        font-size: 24px;
+    }
+
+    .labs {
+        padding: 17px;
+    }
+
+    .diff-med,
+    .diff-hard {
+        margin-left: 3px;
+    }
+}
