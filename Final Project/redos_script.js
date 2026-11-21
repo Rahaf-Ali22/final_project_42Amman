@@ -142,7 +142,7 @@ const chart =
       })
     : null;
 
-    function applyChartTheme(isDark) {
+  function applyChartTheme(isDark) {
   if (!chart) return;
 
   const text = isDark ? "#e5e7eb" : "#374151";
@@ -196,7 +196,7 @@ function clearChart() {
 
 (function initTheme() {
   const themeToggle = document.getElementById("redos-themeToggle");
-  const KEY    = "redos-theme";
+  const KEY    = "security-labs-theme";
 
   if (!themeToggle) return;
 
@@ -218,14 +218,14 @@ function clearChart() {
         : "Switch to dark mode"
     );
 
-    const label = themeToggle.querySelector(".redos-theme-label");
+    const label = themeToggle.querySelector(".theme-label");
 
     if (label) {
       label.textContent = isDark ? "Light" : "Dark";
     }
 
     try {
-      localStorage.setItem("security-labs-theme",theme);
+      localStorage.setItem("dark-theme",theme);
     } catch (error) {
     }
 
@@ -235,7 +235,7 @@ function clearChart() {
   let savedTheme = null;
 
   try {
-    savedTheme = localStorage.getItem("security-labs-theme");
+    savedTheme = localStorage.getItem("dark-theme");
   } catch (error) {
     savedTheme = null;
   }
